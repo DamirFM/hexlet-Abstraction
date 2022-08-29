@@ -1,3 +1,5 @@
+import { makeDecartPoint, getX, getY } from './points.js';
+
 function makeSegment (point1, point12) {
     console.log(point1, point12)
   };
