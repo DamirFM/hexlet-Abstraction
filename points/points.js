@@ -9,10 +9,19 @@ const makePoint = (x, y) => {
   };
   
  // BEGIN (write your solution here)
-const getX = (point) => point.radius * Math.cos(point.angle); //radius * cos(angle)
-console.log(getX)
-const getY = (point) => point.radius * Math.sin(point.angle); //radius * sin(angle)
-console.log(getY)
+ const x = radius * Math.cos(angle);
+ const y = radius * Math.sin(angle);
+ 
+ console.log(x)
+ 
+ 
+ 
+ const getX = (point) => point.angle; //radius * cos(angle)
+ 
+ 
+ 
+ 
+ const getY = (point) => point.radius; //radius * sin(angle)
 // END
 
   
