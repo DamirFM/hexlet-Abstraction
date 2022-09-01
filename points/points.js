@@ -9,14 +9,13 @@ const makePoint = (x, y) => {
   };
   
 // BEGIN (write your solution here)
-const getX = (point) => {
-    const x = (point.radius) * Math.cos(point.angle);
-    return Math.round(x);
-  }; //radius * cos(angle)
-  
-  const getY = (point) => {
-    const y = point.radius * Math.sin(point.angle);
-    return Math.round(y);
+const getAngle = (point) => point.angle;
+
+const getRadius = (point) => point.radius;
+
+const getX = (point) => Math.round(getRadius(point) * Math.cos(getAngle(point)));
+
+const getY = (point) => Math.round(getRadius(point) * Math.sin(getAngle(point)));
   }; //radius * sin(angle)
   // END
   export { makePoint, getX, getY };
