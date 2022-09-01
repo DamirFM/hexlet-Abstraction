@@ -8,21 +8,15 @@ const makePoint = (x, y) => {
     return point;
   };
   
- // BEGIN (write your solution here)
- const x = radius * Math.cos(angle);
- const y = radius * Math.sin(angle);
- 
- console.log(x)
- 
- 
- 
- const getX = (point) => point.angle; //radius * cos(angle)
- 
- 
- 
- 
- const getY = (point) => point.radius; //radius * sin(angle)
-// END
-
+// BEGIN (write your solution here)
+const getX = (point) => {
+    const x = (point.radius) * Math.cos(point.angle);
+    return Math.round(x);
+  }; //radius * cos(angle)
   
+  const getY = (point) => {
+    const y = point.radius * Math.sin(point.angle);
+    return Math.round(y);
+  }; //radius * sin(angle)
+  // END
   export { makePoint, getX, getY };
