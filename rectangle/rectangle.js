@@ -17,7 +17,6 @@ export const makeRectangle = (point, width, height) => {
   }
   
   const getHeight = (rectangle) => {
-  
   }
   
   export const containsOrigin = (rectangle) => {
