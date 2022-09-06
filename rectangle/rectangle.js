@@ -19,6 +19,7 @@ const containsOrigin = (rectangle) => {
   return getQuadrant(point1) === 2 && getQuadrant(point2) === 4;
 };
 
+
 export {
   makeRectangle,
   containsOrigin,
