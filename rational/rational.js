@@ -10,17 +10,17 @@ const makeRational = (number1, number2) => {
   //const f = {`${number}/${denom}`}
   const getNumer = (rat) => rat.numer;
   const getDenom = (rat) => rat.denom;
-  const add = (rat1, rat2) => {
- 
-    const result = { 'numer': getNumer(rat1) + getNumer(rat2), 'denom': getGcd(rat1.denom, rat2.denom) };
-    console.log(result)
-    return result;
-  };
-  const sub = (rat1, rat2) => { 
-    const result = { 'numer': (getNumer(rat1) - getNumer(rat2)) / getGcd(rat1.denom, rat2.denom), 'denom': getGcd(rat1.denom, rat2.denom) / getGcd(rat1.denom, rat2.denom) };
-    console.log(result)
-    return result;
-  };
+  const add = (rational1, rational2) => (
+    makeRational(
+      getNumer(rational1) * getDenom(rational2) + getNumer(rational2) * getDenom(rational1),
+      getDenom(rational1) * getDenom(rational2),
+    ));
+
+  const sub = (rational1, rational2) => (
+    makeRational(
+      getNumer(rational1) * getDenom(rational2) - getNumer(rational2) * getDenom(rational1),
+      getDenom(rational1) * getDenom(rational2),
+    ));
   
 // END
 
