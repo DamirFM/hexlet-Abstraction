@@ -11,13 +11,16 @@ const makeRational = (number1, number2) => {
   const getNumer = (rat) => rat.numer;
   const getDenom = (rat) => rat.denom;
   const add = (rat1, rat2) => {
-    const result = makeRational(rat1,rat2)
-    //const result = { numer: (rat1.numer * getGcd(rat1.numer, rat1.denom)) + (rat2.numer * getGcd(rat2.numer, rat2.denom)), denom: (rat1.denom * rat2.denom) };
+ 
+    const result = { 'numer': getNumer(rat1) + getNumer(rat2), 'denom': getGcd(rat1.denom, rat2.denom) };
     console.log(result)
     return result;
   };
-  const sub = (rat1, rat2) => { };
-  
+  const sub = (rat1, rat2) => { 
+    const result = { 'numer': (getNumer(rat1) - getNumer(rat2)) / getGcd(rat1.denom, rat2.denom), 'denom': getGcd(rat1.denom, rat2.denom) / getGcd(rat1.denom, rat2.denom) };
+    console.log(result)
+    return result;
+  };
   
 // END
 
