@@ -16,6 +16,6 @@ const getRadius = (point) => point.radius;
 const getX = (point) => Math.round(getRadius(point) * Math.cos(getAngle(point)));
 
 const getY = (point) => Math.round(getRadius(point) * Math.sin(getAngle(point)));
-  }; //radius * sin(angle)
+
   // END
   export { makePoint, getX, getY };
