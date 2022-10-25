@@ -7,7 +7,6 @@ export default function getMidpoint(point1, point2) {
     }
     // END
     
-    
     //  x = (x1 + x2) / 2 и y = (y1 + y2) / 2.
     
     // point1 = { x: 0, y: 0 };
