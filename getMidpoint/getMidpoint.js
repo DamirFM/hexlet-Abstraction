@@ -12,7 +12,6 @@ export default function getMidpoint(point1, point2) {
     // point1 = { x: 0, y: 0 };
     // point2 = { x: 4, y: 4 };
     // point3 = {"x": 2, "y": 2}
-    
     //const point1 = { x: 0, y: 0 };
     //const point2 = { x: 4, y: 4 };
     //const point3 = getMidpoint(point1, point2);
