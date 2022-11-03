@@ -10,5 +10,5 @@ export default function calculateDistance(point1, point2) {
     const p2 = (point1[1] - point2[1]) ** 2;
     const result = Math.sqrt(p1 + p2);
     return result;
-    
+  
   }
