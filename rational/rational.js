@@ -7,6 +7,7 @@ const makeRational = (number1, number2) => {
     // console.log(rat)
     return rat;
   };
+  
   //const f = {`${number}/${denom}`}
   const getNumer = (rat) => rat.numer;
   const getDenom = (rat) => rat.denom;

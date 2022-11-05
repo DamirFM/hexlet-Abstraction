@@ -1,8 +1,6 @@
 // @ts-check
 
-import {
-    makeRational, getNumer, getDenom, add, sub, ratToString,
-  } from '../rational.js';
+import { makeRational, getNumer, getDenom, add, sub, ratToString } from 'rational.js';
   
   test('rational', () => {
     const rat1 = makeRational(3, 9);
