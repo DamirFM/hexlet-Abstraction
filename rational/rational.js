@@ -24,8 +24,6 @@ const makeRational = (number1, number2) => {
     ));
   
 // END
-
-
 const ratToString = (rat) => `${getNumer(rat)}/${getDenom(rat)}`;
 
 export {
