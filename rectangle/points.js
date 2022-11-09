@@ -12,6 +12,7 @@ const makeDecartPoint = (x, y) => {
     const x = getX(point);
     const y = getY(point);
   
+    
     if (x > 0 && y > 0) {
       return 1;
     }
