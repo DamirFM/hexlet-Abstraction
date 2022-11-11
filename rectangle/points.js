@@ -28,6 +28,7 @@ const makeDecartPoint = (x, y) => {
     return null;
   };
   
+  
   export {
     makeDecartPoint,
     getX,
