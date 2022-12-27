@@ -8,6 +8,7 @@ const makePoint = (x, y) => {
     return point;
   };
   
+  
 // BEGIN (write your solution here)
 const getAngle = (point) => point.angle;
 
