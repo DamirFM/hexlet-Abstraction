@@ -7,6 +7,8 @@ const makePoint = (x, y) => {
   
     return point;
   };
+
+
   
   
 // BEGIN (write your solution here)
